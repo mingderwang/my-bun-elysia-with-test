@@ -1,6 +1,8 @@
 {
   "name": "my-bun-elysia-with-test",
   "version": "1.0.51",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "test": "bun test --watch",
     "snapshot": "bun test --update-snapshots",
