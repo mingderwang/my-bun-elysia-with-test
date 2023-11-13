@@ -1,6 +1,6 @@
 {
   "name": "my-bun-elysia-with-test",
-  "version": "1.0.50",
+  "version": "1.0.51",
   "scripts": {
     "test": "bun test --watch",
     "snapshot": "bun test --update-snapshots",
