@@ -30,6 +30,14 @@ CMD ["bun", "server.ts"]
 then
 
 ```
-docker build -t example-bun . # Build the Docker image
-docker run --name example-bun -p 3000:3000 example-bun # Run the Docker image
+docker build -t my-bun-elysia-example .      # Build the Docker image
+docker run --rm -it -p 3000:3000 my-bun-elysia-example   # Run the Docker image
+
+// to push to docker hub for deployment to render
+
+docker login -u <your dockerhub account>
+docker build -t <your dockerhub account>/my-bun-elysia-example .
+docker push <your dockerhub account>/my-bun-elysia-example
 ```
+
+refer to https://render.com/
