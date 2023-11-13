@@ -1,0 +1,11 @@
+import { test, expect, mock } from "bun:test";
+const random = mock(() => Math.random());
+
+test("random", async () => {
+  const val = random();
+  expect(val).toBeGreaterThan(0);
+  expect(random).toHaveBeenCalled();
+  expect(random).toHaveBeenCalledTimes(1);
+});
+
+// more on https://bun.sh/docs/test/mocks

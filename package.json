@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "my-bun-elysia-with-test",
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,6 +9,7 @@
     "elysia": "latest"
   },
   "devDependencies": {
+    "@happy-dom/global-registrator": "^12.10.3",
     "bun-types": "latest"
   },
   "module": "src/index.js"
