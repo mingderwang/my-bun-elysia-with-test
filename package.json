@@ -4,13 +4,15 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "start": "bun app.ts",
+    "dev": "bun --hot app.ts",
     "test": "bun test --watch",
     "snapshot": "bun test --update-snapshots",
-    "coverage": "bun test --coverage",
-    "dev": "bun run --watch src/index.ts"
+    "coverage": "bun test --coverage"
   },
   "dependencies": {
-    "elysia": "latest"
+    "elysia": "latest",
+    "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^12.10.3",
