@@ -1,11 +1,15 @@
-import 'isomorphic-fetch';
+import { describe, expect, it } from 'bun:test'
+import Elysia from 'elysia';
 
-beforeEach(() => {
-  console.log("running test.");
-});
+describe('Elysia', () => {
+    it('return a response', async () => {
+        const app = new Elysia()
+              .get('/', () => 'hi')
 
-test("snap", () => {
-  const res = fetch('https://jsonplaceholder.typicode.com/users/1');
-  const result = JSON.stringify((res));
-  expect(result).toMatchSnapshot();
-});
+        const response = await app.handle(
+            new Request('http://localhost/')
+        ).then(res => res.text())
+
+        expect(response).toBe('hi')
+    })
+})
