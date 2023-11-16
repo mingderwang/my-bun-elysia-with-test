@@ -14,6 +14,14 @@ bun run dev
 
 Open http://localhost:3000/ with your browser to see the result.
 
+
+## Testing
+To run tests and show coverage:
+```bash
+bun test
+```
+
+
 ## Deployment (with docker)
 To create a Dockerfile if you have none.
 ```
